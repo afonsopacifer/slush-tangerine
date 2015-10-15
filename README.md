@@ -11,8 +11,8 @@
 
 ## Contributing
 
-Want to contribute? [Follow these recommendations](https://github.com/afonsopacifer/open-source-checklist/blob/master/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://github.com/afonsopacifer/new-game/blob/master/CONTRIBUTING.md).
 
 ## Licence
 
-[MIT Licence](https://github.com/afonsopacifer/open-source-checklist/blob/master/LICENCE.md) © [Afonso Pacifer](http://afonsopacifer.com/)
+[MIT Licence](https://github.com/afonsopacifer/new-game/blob/master/LICENCE.md) © [Afonso Pacifer](http://afonsopacifer.com/)
