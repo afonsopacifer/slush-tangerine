@@ -1,6 +1,6 @@
 # ![New Game Boilerplate](new-game.jpg)
 
-> A Front-End boilerplate to generate static pages.
+> A Front-End boilerplate for help generate Single Pages Apps.
 
 ## Get to know the boilerplate
 
@@ -69,10 +69,17 @@ $ grunt start
 
 ## Grunt Tasks
 
-- `$ grunt build`: Compile, concat and minify all files
-- `$ grunt start`: Watch the files to build and start a static server
-- `$ grunt autoprefixer`: Autoprefixer the css
-- `$ grunt deploy`: Deploy for gh-pages
+- `$ grunt build`: Compile, concat and minify all files.
+- `$ grunt serve`: Watch the files to build and start a static server.
+- `$ grunt autoprefixer`: Autoprefixer the css files.
+- `$ grunt jade`: Compile jade files.
+- `$ grunt stylus`: Compile stylus files.
+- `$ grunt validation`: Validation the HTML files.
+- `$ grunt lint`: Lint the css files.
+- `$ JS hint`: Hint the JS files.
+- `$ grunt imagemin`: Compress image files.
+- `$ grunt svgmin`: Compress svg files.
+- `$ grunt deploy`: Deploy for gh-pages.
 
 ## Contributing
 
