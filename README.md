@@ -1,54 +1,19 @@
-# New Game Boilerplate
-> Description
+# New Game
+> The Front-End boilerplate
 
 ## Get to know the boilerplate
 
-**Stack based in NodeJS**
+*Stack based in NodeJS:*
 - Template Engine: [Jade](http://jade-lang.com/)
 - Task Runner: [GulpJS](http://gulpjs.com/)
 
-**Vendors**
+*Vendors:*
 - Reset: [Normalize](https://necolas.github.io/normalize.css/)
 
-## Getting Started
+## Docs
 
-**install the basics dependencies**
-
-- [NodeJS](https://nodejs.org/en/)
-- [GulpJS](http://gulpjs.com/)
-
-**Clone this repository**
-```sh
-$ git clone git://github.com/afonsopacifer/new-game.git new_project
-```
-
-**Install dependencies**
-```sh
-$ cd new_project
-$ npm install
-```
-
-**Watch the files to build and run a static server on http://localhost:8080/**
-```sh
-$ gulp serve
-```
-
-## Folders Structure
-	.
-	├── README.md
-	├── CONTRIBUTING.md
-	├── LICENSE.md
-	├── src/
-	|   ├── assets/
-	|   ├── includes/
-	|   ├── partials/
-	|   ├── layouts/
-	|   └── index.jade
-	├── out/
-	├── config.json
-	├── gulpfile.js
-	├── package.json
-	└── .gitignore
+- [Getting Started](docs/getting-started.md)
+- <s>[Folders Structure](docs/folders-structure.md)</s>
 
 ## Gulp Tasks
 
