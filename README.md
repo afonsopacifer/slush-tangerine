@@ -1,14 +1,21 @@
 # New Game
-> The Front-End boilerplate
+> The Front-End boilerplate using Jade + PostCSS + GulpJS
 
 ## Get to know the boilerplate
 
-*Stack based in NodeJS:*
-- Template Engine: [Jade](http://jade-lang.com/)
-- Task Runner: [GulpJS](http://gulpjs.com/)
+**Stack based in NodeJS:**
 
-*Vendors:*
-- Reset: [Normalize](https://necolas.github.io/normalize.css/)
+- [Jade](http://jade-lang.com/) as Template Engine.
+- Native CSS features by [PostCSS](https://github.com/postcss/postcss):
+  - [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties)
+  - [autoprefixer](https://github.com/postcss/autoprefixer)
+  - [postcss-import](https://github.com/postcss/postcss-import)
+  - [etc...](http://cssnext.io/features/)
+- [GulpJS](http://gulpjs.com/) as Task Runner.
+
+**Vendors:**
+
+- CSS Reset: [Normalize](https://necolas.github.io/normalize.css/)
 
 ## Docs
 
@@ -20,7 +27,6 @@
 - `$ gulp serve`: Watch the files to build and start a static server.
 - <s>`$ gulp build`: Compile, concat and minify all files.</s>
 - `$ gulp jade`: Compile jade files.
-- <s>`$ gulp autoprefixer`: Autoprefixer the css files.</s>
 - <s>`$ gulp validation`: Validation the HTML files.</s>
 - <s>`$ gulp lint`: Lint the css files.</s>
 - <s>`$ gulp hint`: Hint the JS files.</s>
