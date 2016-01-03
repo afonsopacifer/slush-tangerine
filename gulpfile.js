@@ -8,11 +8,9 @@ var gulp    = require('gulp'),
 
 // Compile Jade
 // ===========================================
-gulp.task('jade', function(){
+gulp.task('jade', () => {
 	gulp.src('src/**.jade')
-		.pipe(data(function(file) {
-      		return require('./config.json');
-    	}))
+		  .pipe(data(file => require('./config.json')))
     	.pipe(jade())
     	.pipe(gulp.dest('out'))
     	.pipe(connect.reload());
@@ -20,7 +18,7 @@ gulp.task('jade', function(){
 
 // cssnext features
 // ===========================================
-gulp.task("cssnext", function() {
+gulp.task("cssnext", () => {
   gulp.src("src/assets/styles/style.css")
     .pipe(cssnext({
         compress: false
@@ -31,14 +29,14 @@ gulp.task("cssnext", function() {
 
 // Watch
 // ===========================================
-gulp.task('watch', function () {
+gulp.task('watch', () => {
 	gulp.watch(['src/**/**.jade'], ['jade']);
 	gulp.watch(['src/assets/styles/**/**.css'], ['cssnext']);
 });
 
 // Static server
 // ===========================================
-gulp.task('connect', function() {
+gulp.task('connect', () => {
 	connect.server({
 		root: 'out',
 		livereload: true
