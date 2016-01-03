@@ -31,10 +31,10 @@ $ npm install
 }
 ```
 
-`site_url`: Will be used for social sharing meta tags.<br>
-`share_img_url`: Will be used for social sharing meta tags.<br>
-`twitter_card_type`: More Info on [Twitte Cards Types](https://dev.twitter.com/cards/types).<br>
-`open_graph_type`: More Info on [Open Graph Reference](https://developers.facebook.com/docs/reference/opengraph/).
+- `site_url`: Will be used for social sharing meta tags.<br>
+- `share_img_url`: Will be used for social sharing meta tags.
+- `twitter_card_type`: More Info on [Twitte Cards Types](https://dev.twitter.com/cards/types).
+- `open_graph_type`: More Info on [Open Graph Reference](https://developers.facebook.com/docs/reference/opengraph/).
 
 <hr>
 
@@ -55,9 +55,9 @@ block page_infos
 block content
 	div Hello World
 ```
-`title`: Will be used for social sharing and SEO meta tags.<br>
-`description`: Will be used for social sharing and SEO meta tags.<br>
-`keywords`: Will be used for SEO meta tag.
+- `title`: Will be used for social sharing and SEO meta tags.
+- `description`: Will be used for social sharing and SEO meta tags.
+- `keywords`: Will be used for SEO meta tag.
 
 <hr>
 

@@ -3,6 +3,7 @@
 	├── README.md
 	├── CONTRIBUTING.md
 	├── LICENSE.md
+	├── docs/
 	├── src/
 	|   ├── assets/
 	|   ├── includes/
