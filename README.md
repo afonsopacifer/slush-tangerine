@@ -12,7 +12,7 @@
 
 ## Getting Started
 
-**install all dependencies**
+**install the basics dependencies**
 
 - [NodeJS](https://nodejs.org/en/)
 - [GulpJS](http://gulpjs.com/)
@@ -20,17 +20,17 @@
 **Clone this repository**
 ```sh
 $ git clone git://github.com/afonsopacifer/new-game.git new_project
-$ cd new_project
 ```
 
 **Install dependencies**
 ```sh
+$ cd new_project
 $ npm install
 ```
 
 **Watch the files to build and run a static server on http://localhost:8080/**
 ```sh
-$ gulp start
+$ gulp serve
 ```
 
 ## Folders Structure
@@ -45,7 +45,7 @@ $ gulp start
 	|   ├── layouts/
 	|   └── index.jade
 	├── out/
-	├── Gruntfile.js
+	├── gulpfile.js
 	├── package.json
 	└── .gitignore
 
@@ -53,8 +53,8 @@ $ gulp start
 
 - `$ gulp serve`: Watch the files to build and start a static server.
 - <s>`$ gulp build`: Compile, concat and minify all files.</s>
+- `$ gulp jade`: Compile jade files.
 - <s>`$ gulp autoprefixer`: Autoprefixer the css files.</s>
-- <s>`$ gulp jade`: Compile jade files.</s>
 - <s>`$ gulp validation`: Validation the HTML files.</s>
 - <s>`$ gulp lint`: Lint the css files.</s>
 - <s>`$ gulp hint`: Hint the JS files.</s>
