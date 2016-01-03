@@ -1,10 +1,10 @@
+:space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader:
+
 # New Game
 
 > The Front-End boilerplate using Jade + PostCSS + BabelJS + GulpJS.
 
-## Start a new <s>game</s> project :)
-
-:space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader:
+## Start a new <s>game</s> project ;)
 
 **Tip:** Use a badge for indicate a Boilerplate version used:  ![New game V0.1.0](https://img.shields.io/badge/new--game-0.0.0-8e33ff.svg)
 
@@ -33,12 +33,12 @@
 ## Gulp Tasks
 
 - `$ gulp serve`: Watch the files to build and start a static server.
-- <s>`$ gulp build`: Compile, concat and minify all files.</s>
+- `$ gulp build`: Compile, concat and minify all files.
 - `$ gulp jade`: Compile jade files.
 - <s>`$ gulp validation`: Validation the HTML files.</s>
 - <s>`$ gulp lint`: Lint the css files.</s>
 - <s>`$ gulp hint`: Hint the JS files.</s>
-- <s>`$ gulp imagemin`: Compress image files.</s>
+- `$ gulp imagemin`: Compress image files.
 - <s>`$ gulp svgmin`: Compress svg files.</s>
 - <s>`$ gulp deploy`: Deploy for gh-pages.</s>
 
