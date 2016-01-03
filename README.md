@@ -1,11 +1,12 @@
 # New Game
-> The Front-End boilerplate using Jade + PostCSS + GulpJS
+> The Front-End boilerplate using Jade + PostCSS + Babel + GulpJS
 
 ## Get to know the boilerplate
 
 **Stack based in NodeJS:**
 
 - [Jade](http://jade-lang.com/) as Template Engine.
+- ES2015 now! With [BabelJS](https://babeljs.io/).
 - Native CSS features by [PostCSS](https://github.com/postcss/postcss):
   - [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties)
   - [autoprefixer](https://github.com/postcss/autoprefixer)
