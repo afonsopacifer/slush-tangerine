@@ -22,7 +22,7 @@ gulp.task('jade', () => {
 gulp.task("cssnext", () => {
   gulp.src("src/assets/styles/style.css")
     .pipe(cssnext({
-        compress: false
+      compress: false
     }))
     .pipe(gulp.dest("out/assets/styles/"))
     .pipe(connect.reload());
@@ -33,7 +33,7 @@ gulp.task("cssnext", () => {
 gulp.task("babel", () => {
     gulp.src("src/assets/scripts/**.js")
       .pipe(babel({
-            presets: ['es2015']
+        presets: ['es2015']
        }))
       .pipe(gulp.dest("out/assets/scripts/"))
       .pipe(connect.reload());
@@ -44,7 +44,7 @@ gulp.task("babel", () => {
 gulp.task('watch', () => {
 	gulp.watch(['src/**/**.jade'], ['jade']);
 	gulp.watch(['src/assets/styles/**/**.css'], ['cssnext']);
-    gulp.watch(['src/assets/scripts/**.js'], ['babel']);
+  gulp.watch(['src/assets/scripts/**.js'], ['babel']);
 });
 
 // Static server
