@@ -45,6 +45,7 @@ $ gulp serve
 	|   ├── layouts/
 	|   └── index.jade
 	├── out/
+	├── config.json
 	├── gulpfile.js
 	├── package.json
 	└── .gitignore
