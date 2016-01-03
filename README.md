@@ -1,9 +1,12 @@
 # New Game
-## Start your new <s>game</s> project :)
 
 > The Front-End boilerplate using Jade + PostCSS + BabelJS + GulpJS.
 
+## Start a new <s>game</s> project :)
+
 :space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader:
+
+**Tip:** Use a badge for indicate a Boilerplate version used:  ![New game V0.1.0](https://img.shields.io/badge/new--game-0.0.0-8e33ff.svg)
 
 ## Get to know the boilerplate
 
