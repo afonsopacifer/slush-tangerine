@@ -2,11 +2,7 @@
 
 # New Game
 
-> The Front-End boilerplate using Jade + PostCSS + BabelJS + GulpJS.
-
-## Start a new <s>game</s> project ;)
-
-**Tip:** Use a badge for indicate a Boilerplate version used:  ![New game V0.1.0](https://img.shields.io/badge/new--game-0.0.0-8e33ff.svg)
+> Start a new <s>game</s> project using Jade + PostCSS + BabelJS + GulpJS.
 
 ## Get to know the boilerplate
 
@@ -45,6 +41,8 @@
 ## Versioning
 
 To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
+
+**Tip:** Use a badge for indicate the Boilerplate version used:  ![New game V0.1.0](https://img.shields.io/badge/new--game-0.0.0-8e33ff.svg)
 
 ## Contributing
 
