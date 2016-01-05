@@ -2,7 +2,7 @@
 
 # New Game
 
-> Start a new <s>game</s> project using Jade + PostCSS + BabelJS + GulpJS.
+> Start a new <s>game</s> project using Jade + PostCSS + BabelJS + Jasmine + GulpJS.
 
 ## Get to know the boilerplate
 
