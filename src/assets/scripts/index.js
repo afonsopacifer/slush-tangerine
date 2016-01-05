@@ -1,1 +1,3 @@
-() => console.log('ok');
+function smile() {
+  return ":)";
+}
