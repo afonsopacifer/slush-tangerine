@@ -2,7 +2,7 @@
 
 # New Game
 
-> Start a new <s>game</s> project using Jade + PostCSS + BabelJS + Jasmine + GulpJS.
+> Start a new <s>game</s> project using Jade + PostCSS + BabelJS + GulpJS + Karma.
 
 ## Get to know the boilerplate
 
@@ -16,6 +16,7 @@
   - [postcss-import](https://github.com/postcss/postcss-import)
   - [etc...](http://cssnext.io/features/)
 - [GulpJS](http://gulpjs.com/) as Task Runner.
+- For tests we use [Karma](https://www.npmjs.com/package/karma) with [Jasmine](https://github.com/karma-runner/karma-jasmine) and [PhantomJS](http://phantomjs.org/).
 
 **Vendors:**
 
@@ -37,6 +38,7 @@
 - `$ gulp imagemin`: Compress image files.
 - <s>`$ gulp svgmin`: Compress svg files.</s>
 - <s>`$ gulp deploy`: Deploy for gh-pages.</s>
+- `karma start:` launch a phantomjs and watch for tests.
 
 ## Versioning
 
