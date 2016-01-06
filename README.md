@@ -56,6 +56,6 @@ Want to contribute? [Follow these recommendations](https://github.com/afonsopaci
 
 See [Releases](https://github.com/afonsopacifer/new-game/releases) for detailed changelog.
 
-## Licence
+## License
 
 [MIT License](https://github.com/afonsopacifer/new-game/blob/master/LICENSE.md) © [Afonso Pacifer](http://afonsopacifer.com/)
