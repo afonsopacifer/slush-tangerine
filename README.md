@@ -37,7 +37,7 @@
 - <s>`$ gulp hint`: Hint the JS files.</s>
 - `$ gulp imagemin`: Compress image files.
 - <s>`$ gulp svgmin`: Compress svg files.</s>
-- <s>`$ gulp deploy`: Deploy for gh-pages.</s>
+- `$ gulp deploy`: Deploy for gh-pages.
 - `karma start:` launch a phantomjs and watch for tests.
 
 ## Versioning

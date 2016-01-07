@@ -6,7 +6,8 @@ var gulp     = require('gulp'),
     cssnext  = require("gulp-cssnext"),
     babel    = require("gulp-babel"),
     imagemin = require('gulp-imagemin'),
-    connect  = require('gulp-connect');
+    connect  = require('gulp-connect'),
+    ghPages  = require('gulp-gh-pages');
 
 // Compile Jade
 // ===========================================
@@ -67,6 +68,13 @@ gulp.task('connect', () => {
 		root: 'out',
 		livereload: true
 	});
+});
+
+// Deploy for gh-pages
+// ===========================================
+gulp.task('deploy', () => {
+  return gulp.src('./out/')
+    .pipe(ghPages());
 });
 
 // More Tasks
