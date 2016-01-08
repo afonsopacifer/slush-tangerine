@@ -5,6 +5,7 @@ var gulp     = require('gulp'),
     data     = require('gulp-data'),
     cssnext  = require("gulp-cssnext"),
     babel    = require("gulp-babel"),
+    jshint   = require('gulp-jshint'),
     imagemin = require('gulp-imagemin'),
     connect  = require('gulp-connect'),
     ghPages  = require('gulp-gh-pages');
@@ -41,6 +42,14 @@ gulp.task("babel", () => {
     .pipe(connect.reload());
 });
 
+// JSHint
+// ===========================================
+gulp.task('hint', function() {
+  return gulp.src('out/assets/scripts/**.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+
 // Imagemin
 // ===========================================
 gulp.task('imagemin', () => {
@@ -59,6 +68,7 @@ gulp.task('watch', () => {
 	gulp.watch(['src/assets/styles/**/**.css'], ['cssnext']);
   gulp.watch(['src/assets/scripts/**.js'], ['babel']);
   gulp.watch(['src/assets/img/**/**'], ['imagemin']);
+  gulp.watch(['out/assets/scripts/**.js'], ['hint']);
 });
 
 // Static server
