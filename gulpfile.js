@@ -4,6 +4,7 @@ var gulp     = require('gulp'),
     jade     = require('gulp-jade'),
     data     = require('gulp-data'),
     cssnext  = require("gulp-cssnext"),
+    csslint  = require('gulp-csslint'),
     babel    = require("gulp-babel"),
     jshint   = require('gulp-jshint'),
     imagemin = require('gulp-imagemin'),
@@ -31,6 +32,15 @@ gulp.task("cssnext", () => {
     .pipe(connect.reload());
 });
 
+// CSS Lint
+// ===========================================
+gulp.task('csslint', () => {
+  gulp.src('out/assets/styles/*.css')
+    .pipe(csslint())
+    .pipe(csslint.reporter()),
+    .pipe(connect.reload());
+});
+
 // Babel
 // ===========================================
 gulp.task("babel", () => {
@@ -44,10 +54,11 @@ gulp.task("babel", () => {
 
 // JSHint
 // ===========================================
-gulp.task('hint', function() {
+gulp.task('hint', () => {
   return gulp.src('out/assets/scripts/**.js')
     .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+    .pipe(jshint.reporter('default')),
+    .pipe(connect.reload());
 });
 
 // Imagemin
@@ -58,7 +69,8 @@ gulp.task('imagemin', () => {
       progressive: true,
       svgoPlugins: [{removeViewBox: false}]
     }))
-    .pipe(gulp.dest('out/assets/img/'));
+    .pipe(gulp.dest('out/assets/img/')),
+    .pipe(connect.reload());
 });
 
 // Watch
@@ -66,6 +78,7 @@ gulp.task('imagemin', () => {
 gulp.task('watch', () => {
 	gulp.watch(['src/**/**.jade'], ['jade']);
 	gulp.watch(['src/assets/styles/**/**.css'], ['cssnext']);
+  gulp.watch(['out/assets/styles/**.css'], ['csslint']);
   gulp.watch(['src/assets/scripts/**.js'], ['babel']);
   gulp.watch(['src/assets/img/**/**'], ['imagemin']);
   gulp.watch(['out/assets/scripts/**.js'], ['hint']);

@@ -33,8 +33,8 @@
 - `$ gulp build`: Compile, concat and minify all files.
 - `$ gulp jade`: Compile jade files.
 - <s>`$ gulp validation`: Validation the HTML files.</s>
-- <s>`$ gulp lint`: Lint the css files.</s>
-- <s>`$ gulp hint`: Hint the JS files.</s>
+- `$ gulp csslint`: Lint the css files.
+- `$ gulp hint`: Hint the JS files.
 - `$ gulp imagemin`: Compress image files.
 - <s>`$ gulp svgmin`: Compress svg files.</s>
 - `$ gulp deploy`: Deploy for gh-pages.
