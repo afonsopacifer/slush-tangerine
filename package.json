@@ -20,6 +20,7 @@
     "gulp-imagemin": "^2.4.0",
     "gulp-jade": "^1.1.0",
     "gulp-jshint": "^2.0.0",
+    "gulp-uncss": "^1.0.4",
     "jasmine-core": "^2.4.1",
     "jshint": "^2.8.0",
     "karma": "^0.13.19",

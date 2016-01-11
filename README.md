@@ -31,14 +31,9 @@
 
 - `$ gulp serve`: Watch the files to build and start a static server.
 - `$ gulp build`: Compile, concat and minify all files.
-- `$ gulp jade`: Compile jade files.
-- `$ gulp htmlhint`: Validation the HTML files.
-- `$ gulp csslint`: Lint the css files.
-- `$ gulp hint`: Hint the JS files.
-- `$ gulp imagemin`: Compress image files.
-- <s>`$ gulp svgmin`: Compress svg files.</s>
+- `$ gulp validate`: check the code quality of HTML/CSS/JS.
 - `$ gulp deploy`: Deploy for gh-pages.
-- `karma start:` launch a phantomjs and watch for tests.
+- `$ karma start:` launch a phantomjs and watch for tests.
 
 ## Versioning
 

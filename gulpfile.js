@@ -5,6 +5,7 @@ var gulp     = require('gulp'),
     data     = require('gulp-data'),
     htmlhint = require("gulp-htmlhint"),
     cssnext  = require("gulp-cssnext"),
+    uncss    = require('gulp-uncss');
     csslint  = require('gulp-csslint'),
     babel    = require("gulp-babel"),
     jshint   = require('gulp-jshint'),
@@ -27,7 +28,8 @@ gulp.task('jade', () => {
 gulp.task("htmlhint", () => {
   gulp.src("./out/*.html")
     .pipe(htmlhint())
-    .pipe(htmlhint.reporter());
+    .pipe(htmlhint.reporter())
+    .pipe(connect.reload());
 });
 
 // cssnext features
@@ -41,12 +43,24 @@ gulp.task("cssnext", () => {
     .pipe(connect.reload());
 });
 
+// uncss
+// ===========================================
+gulp.task('uncss', () => {
+  gulp.src('out/assets/styles/style.css')
+    .pipe(uncss({
+        html: ['out/*.html']
+      }))
+    .pipe(gulp.dest('out/assets/styles/'))
+    .pipe(connect.reload());
+});
+
 // CSS Lint
 // ===========================================
 gulp.task('csslint', () => {
   gulp.src('out/assets/styles/*.css')
     .pipe(csslint())
-    .pipe(csslint.reporter());
+    .pipe(csslint.reporter())
+    .pipe(connect.reload());
 });
 
 // Babel
@@ -65,7 +79,8 @@ gulp.task("babel", () => {
 gulp.task('hint', () => {
   return gulp.src('out/assets/scripts/**.js')
     .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+    .pipe(jshint.reporter('default'))
+    .pipe(connect.reload());
 });
 
 // Imagemin
@@ -77,6 +92,7 @@ gulp.task('imagemin', () => {
       svgoPlugins: [{removeViewBox: false}]
     }))
     .pipe(gulp.dest('out/assets/img/'))
+    .pipe(gulp.dest('src/assets/img/img'))
     .pipe(connect.reload());
 });
 
@@ -86,6 +102,7 @@ gulp.task('watch', () => {
 	gulp.watch(['src/**/**.jade'], ['jade']);
 	gulp.watch(['out/*.html'], ['htmlhint']);
 	gulp.watch(['src/assets/styles/**/**.css'], ['cssnext']);
+  gulp.watch(['out/assets/styles/**.css'], ['uncss']);
   gulp.watch(['out/assets/styles/**.css'], ['csslint']);
   gulp.watch(['src/assets/scripts/**.js'], ['babel']);
   gulp.watch(['src/assets/img/**/**'], ['imagemin']);
@@ -111,4 +128,5 @@ gulp.task('deploy', () => {
 // More Tasks
 // ===========================================
 gulp.task('serve', ['build', 'connect', 'watch']);
-gulp.task('build', ['jade', 'cssnext', 'babel', 'imagemin']);
+gulp.task('build', ['jade', 'cssnext', 'uncss', 'babel', 'imagemin']);
+gulp.task('validate', ['htmlhint', 'csslint', 'hint']);
