@@ -3,6 +3,7 @@
 var gulp     = require('gulp'),
     jade     = require('gulp-jade'),
     data     = require('gulp-data'),
+    htmlhint = require("gulp-htmlhint"),
     cssnext  = require("gulp-cssnext"),
     csslint  = require('gulp-csslint'),
     babel    = require("gulp-babel"),
@@ -21,6 +22,14 @@ gulp.task('jade', () => {
     	.pipe(connect.reload());
 });
 
+// HTML hint
+// ===========================================
+gulp.task("htmlhint", () => {
+  gulp.src("./out/*.html")
+    .pipe(htmlhint())
+    .pipe(htmlhint.reporter());
+});
+
 // cssnext features
 // ===========================================
 gulp.task("cssnext", () => {
@@ -37,8 +46,7 @@ gulp.task("cssnext", () => {
 gulp.task('csslint', () => {
   gulp.src('out/assets/styles/*.css')
     .pipe(csslint())
-    .pipe(csslint.reporter()),
-    .pipe(connect.reload());
+    .pipe(csslint.reporter());
 });
 
 // Babel
@@ -57,8 +65,7 @@ gulp.task("babel", () => {
 gulp.task('hint', () => {
   return gulp.src('out/assets/scripts/**.js')
     .pipe(jshint())
-    .pipe(jshint.reporter('default')),
-    .pipe(connect.reload());
+    .pipe(jshint.reporter('default'));
 });
 
 // Imagemin
@@ -69,7 +76,7 @@ gulp.task('imagemin', () => {
       progressive: true,
       svgoPlugins: [{removeViewBox: false}]
     }))
-    .pipe(gulp.dest('out/assets/img/')),
+    .pipe(gulp.dest('out/assets/img/'))
     .pipe(connect.reload());
 });
 
@@ -77,6 +84,7 @@ gulp.task('imagemin', () => {
 // ===========================================
 gulp.task('watch', () => {
 	gulp.watch(['src/**/**.jade'], ['jade']);
+	gulp.watch(['out/*.html'], ['htmlhint']);
 	gulp.watch(['src/assets/styles/**/**.css'], ['cssnext']);
   gulp.watch(['out/assets/styles/**.css'], ['csslint']);
   gulp.watch(['src/assets/scripts/**.js'], ['babel']);

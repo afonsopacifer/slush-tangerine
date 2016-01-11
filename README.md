@@ -32,7 +32,7 @@
 - `$ gulp serve`: Watch the files to build and start a static server.
 - `$ gulp build`: Compile, concat and minify all files.
 - `$ gulp jade`: Compile jade files.
-- <s>`$ gulp validation`: Validation the HTML files.</s>
+- `$ gulp htmlhint`: Validation the HTML files.
 - `$ gulp csslint`: Lint the css files.
 - `$ gulp hint`: Hint the JS files.
 - `$ gulp imagemin`: Compress image files.
