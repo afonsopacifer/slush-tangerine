@@ -3,11 +3,11 @@
 var gulp     = require('gulp'),
     jade     = require('gulp-jade'),
     data     = require('gulp-data'),
-    htmlhint = require("gulp-htmlhint"),
-    cssnext  = require("gulp-cssnext"),
+    htmlhint = require('gulp-htmlhint'),
+    cssnext  = require('gulp-cssnext'),
     uncss    = require('gulp-uncss');
     csslint  = require('gulp-csslint'),
-    babel    = require("gulp-babel"),
+    babel    = require('gulp-babel'),
     jshint   = require('gulp-jshint'),
     imagemin = require('gulp-imagemin'),
     connect  = require('gulp-connect'),
@@ -25,8 +25,8 @@ gulp.task('jade', () => {
 
 // HTML hint
 // ===========================================
-gulp.task("htmlhint", () => {
-  gulp.src("./out/*.html")
+gulp.task('htmlhint', () => {
+  gulp.src('./out/*.html')
     .pipe(htmlhint())
     .pipe(htmlhint.reporter())
     .pipe(connect.reload());
@@ -34,12 +34,12 @@ gulp.task("htmlhint", () => {
 
 // cssnext features
 // ===========================================
-gulp.task("cssnext", () => {
-  gulp.src("src/assets/styles/style.css")
+gulp.task('cssnext', () => {
+  gulp.src('src/assets/styles/style.css')
     .pipe(cssnext({
       compress: false
     }))
-    .pipe(gulp.dest("out/assets/styles/"))
+    .pipe(gulp.dest('out/assets/styles/'))
     .pipe(connect.reload());
 });
 
@@ -65,12 +65,12 @@ gulp.task('csslint', () => {
 
 // Babel
 // ===========================================
-gulp.task("babel", () => {
-  gulp.src("src/assets/scripts/**.js")
+gulp.task('babel', () => {
+  gulp.src('src/assets/scripts/**.js')
     .pipe(babel({
       presets: ['es2015']
      }))
-    .pipe(gulp.dest("out/assets/scripts/"))
+    .pipe(gulp.dest('out/assets/scripts/'))
     .pipe(connect.reload());
 });
 

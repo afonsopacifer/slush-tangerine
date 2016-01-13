@@ -33,7 +33,7 @@
 - `$ gulp build`: Compile, concat and minify all files.
 - `$ gulp validate`: check the code quality of HTML/CSS/JS.
 - `$ gulp deploy`: Deploy for gh-pages.
-- `$ karma start:` launch a phantomjs and watch for tests.
+- `$ karma start:` Launch a phantomjs and watch for tests.
 
 ## Versioning
 
