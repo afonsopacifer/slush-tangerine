@@ -24,8 +24,8 @@ $ npm install
 
 ```json
 {
-  "site_url":"https://exemple.com/",
-  "share_img_url":"https://exemple.com/logo.jpg",
+  "site_url":"https://example.com/",
+  "share_img_url":"https://example.com/logo.jpg",
   "twitter_card_type":"summary_large_image",
   "open_graph_type":"website"
 }
@@ -42,13 +42,13 @@ $ npm install
 
 *Go to `src/` directory and create your `.jade` file:*
 
-`exemple.jade`
+`example.jade`
 
 ```jade
 extends ./layouts/default.jade
 
 block page_infos
-	-var title = "Exemple title"
+	-var title = "Example title"
 	-var description = "Cool description"
 	-var keywords = "Your keywords"
 
