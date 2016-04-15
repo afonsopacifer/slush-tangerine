@@ -1,5 +1,3 @@
-:space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader::space_invader:
-
 # New Game
 
 > Start a new <s>game</s> project using Jade + PostCSS + BabelJS + GulpJS + Karma.
@@ -31,9 +29,8 @@
 
 - `$ gulp serve`: Watch the files to build and start a static server.
 - `$ gulp build`: Compile, concat and minify all files.
-- `$ gulp validate`: check the code quality of HTML/CSS/JS.
 - `$ gulp deploy`: Deploy for gh-pages.
-- `$ karma start:` Launch a phantomjs and watch for tests.
+- `$ karma start`: Launch a Phantomjs and watch for tests.
 
 ## Versioning
 

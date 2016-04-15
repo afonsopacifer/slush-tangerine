@@ -3,10 +3,7 @@
 var gulp     = require('gulp'),
     jade     = require('gulp-jade'),
     data     = require('gulp-data'),
-    htmlhint = require('gulp-htmlhint'),
     cssnext  = require('gulp-cssnext'),
-    uncss    = require('gulp-uncss');
-    csslint  = require('gulp-csslint'),
     babel    = require('gulp-babel'),
     jshint   = require('gulp-jshint'),
     imagemin = require('gulp-imagemin'),
@@ -23,15 +20,6 @@ gulp.task('jade', () => {
     	.pipe(connect.reload());
 });
 
-// HTML hint
-// ===========================================
-gulp.task('htmlhint', () => {
-  gulp.src('./out/*.html')
-    .pipe(htmlhint())
-    .pipe(htmlhint.reporter())
-    .pipe(connect.reload());
-});
-
 // cssnext features
 // ===========================================
 gulp.task('cssnext', () => {
@@ -40,26 +28,6 @@ gulp.task('cssnext', () => {
       compress: false
     }))
     .pipe(gulp.dest('out/assets/styles/'))
-    .pipe(connect.reload());
-});
-
-// uncss
-// ===========================================
-gulp.task('uncss', () => {
-  gulp.src('out/assets/styles/style.css')
-    .pipe(uncss({
-        html: ['out/*.html']
-      }))
-    .pipe(gulp.dest('out/assets/styles/'))
-    .pipe(connect.reload());
-});
-
-// CSS Lint
-// ===========================================
-gulp.task('csslint', () => {
-  gulp.src('out/assets/styles/*.css')
-    .pipe(csslint())
-    .pipe(csslint.reporter())
     .pipe(connect.reload());
 });
 
@@ -77,7 +45,7 @@ gulp.task('babel', () => {
 // JSHint
 // ===========================================
 gulp.task('hint', () => {
-  return gulp.src('out/assets/scripts/**.js')
+  return gulp.src('src/assets/scripts/**.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(connect.reload());
@@ -92,7 +60,6 @@ gulp.task('imagemin', () => {
       svgoPlugins: [{removeViewBox: false}]
     }))
     .pipe(gulp.dest('out/assets/img/'))
-    .pipe(gulp.dest('src/assets/img/img'))
     .pipe(connect.reload());
 });
 
@@ -100,13 +67,10 @@ gulp.task('imagemin', () => {
 // ===========================================
 gulp.task('watch', () => {
 	gulp.watch(['src/**/**.jade'], ['jade']);
-	gulp.watch(['out/*.html'], ['htmlhint']);
 	gulp.watch(['src/assets/styles/**/**.css'], ['cssnext']);
-  gulp.watch(['out/assets/styles/**.css'], ['uncss']);
-  gulp.watch(['out/assets/styles/**.css'], ['csslint']);
   gulp.watch(['src/assets/scripts/**.js'], ['babel']);
   gulp.watch(['src/assets/img/**/**'], ['imagemin']);
-  gulp.watch(['out/assets/scripts/**.js'], ['hint']);
+  gulp.watch(['src/assets/scripts/**.js'], ['hint']);
 });
 
 // Static server
@@ -127,6 +91,6 @@ gulp.task('deploy', () => {
 
 // More Tasks
 // ===========================================
-gulp.task('serve', ['build', 'connect', 'watch']);
-gulp.task('build', ['jade', 'cssnext', 'uncss', 'babel', 'imagemin']);
-gulp.task('validate', ['htmlhint', 'csslint', 'hint']);
+gulp.task('serve', ['connect', 'watch']);
+gulp.task('build', ['jade', 'cssnext', 'babel', 'hint', 'imagemin']);
+gulp.task('validate', ['hint']);
