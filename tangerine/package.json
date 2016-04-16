@@ -1,0 +1,30 @@
+{
+  "name": "<%= appNameSlug %>",
+"description": "<%= appDescription %>",
+  "version": "<%= appVersion %>",
+  "author": {
+    "name": "<%= appAuthor %>",
+    "email": "<%= appEmail %>"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-cssnext": "^1.0.1",
+    "gulp-data": "^1.2.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jshint": "^2.0.0",
+    "jasmine-core": "^2.4.1",
+    "jshint": "^2.8.0",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-cli": "^0.1.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "phantomjs": "^1.9.19",
+    "postcss": "^5.0.13"
+  }
+}

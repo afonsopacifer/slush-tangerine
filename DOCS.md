@@ -5,18 +5,14 @@
 
 - [NodeJS](https://nodejs.org/en/)
 - [GulpJS](http://gulpjs.com/)
+- [Slush](http://slushjs.github.io/)
 
-*Clone this repository*
-```sh
-$ git clone git://github.com/afonsopacifer/new-game.git new_project
-```
+*install and use the generator*
 
-*Install dependencies*
 ```sh
-$ cd new_project
-$ npm install
+$ [sudo] npm install -g slush-tangerine
+$ slush tangerine
 ```
-<hr>
 
 ## 2 - Set the global configs
 
@@ -55,14 +51,26 @@ block page_infos
 block content
 	div Hello World
 ```
+
 - `title`: Will be used for social sharing and SEO meta tags.
 - `description`: Will be used for social sharing and SEO meta tags.
 - `keywords`: Will be used for SEO meta tag.
 
 <hr>
 
-## 4 - Run
+## 4 - Build, Serve and Deploy
+
+*Build all files*
+```sh
+$ gulp build
+```
+
 *Watch the files to build and run a static server on http://localhost:8080/*
 ```sh
 $ gulp serve
+```
+
+*Deploy for gh-pages*
+```sh
+$ gulp deploy
 ```

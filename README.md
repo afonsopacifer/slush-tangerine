@@ -1,53 +1,91 @@
-# New Game
+# Slush Tangerine
 
-> Start a new <s>game</s> project using Jade + PostCSS + BabelJS + GulpJS + Karma.
+> Front-End boilerplate generator with tangerine flavor.
 
-## Get to know the boilerplate
+## How to use install and use the generator?
 
-**Stack based in NodeJS:**
+Install the slush:
 
-- [Jade](http://jade-lang.com/) as Template Engine.
-- ES2015 now! With [BabelJS](https://babeljs.io/).
-- Native CSS features by [PostCSS](https://github.com/postcss/postcss):
-  - [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties)
-  - [autoprefixer](https://github.com/postcss/autoprefixer)
-  - [postcss-import](https://github.com/postcss/postcss-import)
-  - [etc...](http://cssnext.io/features/)
-- [GulpJS](http://gulpjs.com/) as Task Runner.
-- For tests we use [Karma](https://www.npmjs.com/package/karma) with [Jasmine](https://github.com/karma-runner/karma-jasmine) and [PhantomJS](http://phantomjs.org/).
+```sh
+$ [sudo] npm install -g slush
+```
 
-**Vendors:**
+Install the tangerine generator:
+
+```sh
+$ [sudo] npm install -g slush-tangerine
+```
+
+Use the generator:
+
+```sh
+$ slush tangerine
+```
+
+## The generated boilerplate
+
+Basic docs:
+
+- [Getting Started](docs.md)
+
+Stack based in NodeJS:
+
+- Generator: [Slush](http://slushjs.github.io/#/)
+- Task Runner: [Gulp](http://gulpjs.com/)
+- HTML Template Engine: [Pug](http://jade-lang.com/)
+- CSS Post Processor: [PostCSS](https://github.com/postcss/postcss)
+- JS Traspiler: [BabelJS](https://babeljs.io/)
+- Test Runner: [Karma](https://www.npmjs.com/package/karma)
+- Test Framework: [Jasmine](https://github.com/karma-runner/karma-jasmine)
+<!-- - CSS Regression Testing: [BackstopJS](https://github.com/garris/BackstopJS) -->
+- "Browser" for test: [PhantomJS](http://phantomjs.org/)
+
+Vendors:
 
 - CSS Reset: [Normalize](https://necolas.github.io/normalize.css/)
 
-## Docs
+Folders Structure:
 
-- [Getting Started](docs/getting-started.md)
-- <s>[Folders Structure](docs/folders-structure.md)</s>
+	.
+	├── README.md
+	├── out/
+	├── tests/
+	├── src/
+	|   ├── assets/
+	|   ├── includes/
+	|   ├── partials/
+	|   ├── layouts/
+	|   └── index.jade
+	├── config.json
+	├── gulpfile.js
+	├── package.json
+	├── karma.conf.js
+	├── .editorconfig
+	├── .jshintrc
+	└── .gitignore
 
-## Gulp Tasks
+Automatic Tasks:
 
-- `$ gulp serve`: Watch the files to build and start a static server.
 - `$ gulp build`: Compile, concat and minify all files.
+- `$ gulp serve`: Watch the files to build and start a static server.
 - `$ gulp deploy`: Deploy for gh-pages.
-- `$ karma start`: Launch a Phantomjs and watch for tests.
+- `$ gulp validate`: Code quality (JS Hint).
+- `$ karma start`: Launch a Phantomjs and watch for unit tests.
 
 ## Versioning
 
 To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
 
-**Tip:** Use a badge for indicate the Boilerplate version used:  ![New game V0.1.0](https://img.shields.io/badge/new--game-0.0.0-8e33ff.svg)
-
 ## Contributing
 
-Find on our [roadmap](https://github.com/afonsopacifer/new-game/issues/1) the next steps of the project ;)
+Find on our [roadmap](https://github.com/afonsopacifer/slush-tangerine/issues/1) the next steps of the project ;)
 <br>
-Want to contribute? [Follow these recommendations](https://github.com/afonsopacifer/new-game/blob/master/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://github.com/afonsopacifer/slush-tangerine/blob/master/CONTRIBUTING.md).
 
 ## History
 
-See [Releases](https://github.com/afonsopacifer/new-game/releases) for detailed changelog.
+See [Releases](https://github.com/afonsopacifer/slush-tangerine/releases) for detailed changelog.
 
 ## License
 
-[MIT License](https://github.com/afonsopacifer/new-game/blob/master/LICENSE.md) © [Afonso Pacifer](http://afonsopacifer.com/)
+[MIT License](https://github.com/afonsopacifer/slush-tangerine/blob/master/LICENSE.md) © [Afonso Pacifer](http://afonsopacifer.com/)
