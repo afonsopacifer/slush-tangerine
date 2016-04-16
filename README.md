@@ -2,9 +2,34 @@
 
 > Front-End boilerplate generator with tangerine flavor.
 
-## Get to know the boilerplate
+## How to use install and use the generator?
 
-**Stack based in NodeJS:**
+Install the slush:
+
+```
+$ [sudo] npm install -g slush
+```
+
+Install the tangerine generator:
+
+```
+$ [sudo] npm install -g slush-tangerine
+```
+
+Use the generator:
+
+```
+$ slush tangerine
+```
+
+## The generated boilerplate
+
+Basic docs:
+
+- [Getting Started](docs/getting-started.md)
+- [Folders Structure](docs/folders-structure.md)
+
+Stack based in NodeJS:
 
 - Generator: [Slush](http://slushjs.github.io/#/)
 - Task Runner: [Gulp](http://gulpjs.com/)
@@ -13,24 +38,19 @@
 - JS Traspiler: [BabelJS](https://babeljs.io/)
 - Test Runner: [Karma](https://www.npmjs.com/package/karma)
 - Test Framework: [Jasmine](https://github.com/karma-runner/karma-jasmine)
-- CSS Regression Testing: [BackstopJS](https://github.com/garris/BackstopJS)
+<!-- - CSS Regression Testing: [BackstopJS](https://github.com/garris/BackstopJS) -->
 - "Browser" for test: [PhantomJS](http://phantomjs.org/)
 
-**Vendors:**
+Vendors:
 
 - CSS Reset: [Normalize](https://necolas.github.io/normalize.css/)
 
-## Docs
-
-- [Getting Started](docs/getting-started.md)
-- [Folders Structure](docs/folders-structure.md)
-
-## Automatic Tasks
+Automatic Tasks:
 
 - `$ gulp build`: Compile, concat and minify all files.
 - `$ gulp serve`: Watch the files to build and start a static server.
 - `$ gulp deploy`: Deploy for gh-pages.
-- `$ gulp validate`: Code quality (Pug Lint / CSS Lint / JS Hint).
+- `$ gulp validate`: Code quality (JS Hint).
 - `$ karma start`: Launch a Phantomjs and watch for unit tests.
 
 ## Versioning

@@ -1,11 +1,10 @@
 {
-  "name": "slush-tangerine",
-  "version": "1.0.0",
-  "license": "MIT",
+  "name": "<%= appNameSlug %>",
+"description": "<%= appDescription %>",
+  "version": "<%= appVersion %>",
   "author": {
-    "name": "Afonso Pacifer",
-    "email": "afonsopacifer@live.com",
-    "url": "http://afonsopacifer.com"
+    "name": "<%= appAuthor %>",
+    "email": "<%= appEmail %>"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",

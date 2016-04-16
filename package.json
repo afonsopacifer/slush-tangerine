@@ -1,0 +1,24 @@
+{
+  "name": "slush-tangerine",
+  "version": "1.0.0",
+  "description": "Front-End boilerplate generator with tangerine flavor.",
+  "main": "slushfile.js",
+  "keywords": [
+    "slushgenerator"
+  ],
+  "dependencies": {
+    "gulp": "~3.5.6",
+    "gulp-template": "~0.1.1",
+    "gulp-install": "~0.1.1",
+    "gulp-conflict": "~0.1.1",
+    "gulp-rename": "~1.2.0",
+    "underscore.string": "~2.3.3",
+    "inquirer": "~0.4.1"
+  },
+  "author": {
+    "name": "Afonso Pacifer",
+    "email": "afonsopacifer@live.com",
+    "url": "http://afonsopacifer.com"
+  },
+  "license": "MIT"
+}
