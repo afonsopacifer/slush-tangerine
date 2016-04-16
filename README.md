@@ -6,19 +6,19 @@
 
 Install the slush:
 
-```
+```sh
 $ [sudo] npm install -g slush
 ```
 
 Install the tangerine generator:
 
-```
+```sh
 $ [sudo] npm install -g slush-tangerine
 ```
 
 Use the generator:
 
-```
+```sh
 $ slush tangerine
 ```
 
@@ -26,8 +26,7 @@ $ slush tangerine
 
 Basic docs:
 
-- [Getting Started](docs/getting-started.md)
-- [Folders Structure](docs/folders-structure.md)
+- [Getting Started](docs.md)
 
 Stack based in NodeJS:
 
@@ -44,6 +43,26 @@ Stack based in NodeJS:
 Vendors:
 
 - CSS Reset: [Normalize](https://necolas.github.io/normalize.css/)
+
+Folders Structure:
+
+	.
+	├── README.md
+	├── out/
+	├── tests/
+	├── src/
+	|   ├── assets/
+	|   ├── includes/
+	|   ├── partials/
+	|   ├── layouts/
+	|   └── index.jade
+	├── config.json
+	├── gulpfile.js
+	├── package.json
+	├── karma.conf.js
+	├── .editorconfig
+	├── .jshintrc
+	└── .gitignore
 
 Automatic Tasks:
 
