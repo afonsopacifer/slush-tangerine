@@ -1,3 +1,5 @@
+![Slush Tangerine Logo](logo.png)
+
 # Slush Tangerine
 
 > Front-End boilerplate generator with tangerine flavor.
@@ -26,18 +28,17 @@ $ slush tangerine
 
 Basic docs:
 
-- [Getting Started](docs.md)
+- [Getting Started](https://github.com/afonsopacifer/slush-tangerine/blob/master/DOCS.md)
 
 Stack based in NodeJS:
 
 - Generator: [Slush](http://slushjs.github.io/#/)
 - Task Runner: [Gulp](http://gulpjs.com/)
-- HTML Template Engine: [Pug](http://jade-lang.com/)
+- HTML Template Engine: [Jade](http://jade-lang.com/)
 - CSS Post Processor: [PostCSS](https://github.com/postcss/postcss)
 - JS Traspiler: [BabelJS](https://babeljs.io/)
 - Test Runner: [Karma](https://www.npmjs.com/package/karma)
 - Test Framework: [Jasmine](https://github.com/karma-runner/karma-jasmine)
-<!-- - CSS Regression Testing: [BackstopJS](https://github.com/garris/BackstopJS) -->
 - "Browser" for test: [PhantomJS](http://phantomjs.org/)
 
 Vendors:
