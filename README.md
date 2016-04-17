@@ -4,7 +4,7 @@
 
 > Front-End boilerplate generator with tangerine flavor.
 
-## How to use install and use the generator?
+## How to install and use the generator?
 
 Install the slush:
 
