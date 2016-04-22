@@ -1,4 +1,4 @@
-![Slush Tangerine Logo](logo.png)
+![Slush Tangerine Logo](https://github.com/afonsopacifer/slush-tangerine/blob/master/logo.png)
 
 # Slush Tangerine
 
